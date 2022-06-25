@@ -13,7 +13,10 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "incremental": true
+
+    // Theos' additions
+    "incremental": false, // was true
+    "noUncheckedIndexedAccess": true, //didn't exist in the original config    
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
