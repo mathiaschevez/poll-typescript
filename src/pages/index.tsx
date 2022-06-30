@@ -43,7 +43,7 @@ const Home: NextPage = () => {
         <h1 className='text-2xl font-bold'>Questions</h1>
         {data.map((question) => (
           <Link href={`/question/${question.id}`} key={question.id}>
-            <button key={question.id} className='my-2'>
+            <button className='my-2'>
               <h1>{question.question}</h1>
             </button>
           </Link>
